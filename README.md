@@ -60,7 +60,7 @@ in your programs without even running them!
 
 Here is a small example to whet your appetite:
 
-```python
+```pyc
 number = input("What is your favourite number?")
 print("It is", number + 1)  # error: Unsupported operand types for + ("str" and "int")
 ```
@@ -92,14 +92,14 @@ Quick start
 
 Mypy can be installed using pip:
 
-```bash
+```bash.sh
 python3 -m pip install -U mypy
 ```
 
 If you want to run the latest version of the code, you can install from the
 repo directly:
 
-```bash
+```bash.sh
 python3 -m pip install -U git+https://github.com/python/mypy.git
 # or if you don't have 'git' installed
 python3 -m pip install -U https://github.com/python/mypy/zipball/master
@@ -107,7 +107,7 @@ python3 -m pip install -U https://github.com/python/mypy/zipball/master
 
 Now you can type-check the [statically typed parts] of a program like this:
 
-```bash
+```bash.sh
 mypy PROGRAM
 ```
 
@@ -122,7 +122,7 @@ You can also try mypy in an [online playground](https://mypy-play.net/) (develop
 Yusuke Miyazaki). If you are working with large code bases, you can run mypy in
 [daemon mode], that will give much faster (often sub-second) incremental updates:
 
-```bash
+```bash.sh
 dmypy run -- PROGRAM
 ```
 
@@ -182,7 +182,7 @@ mypy approximately 4 times faster than if interpreted!
 
 To install an interpreted mypy instead, use:
 
-```bash
+```bash.sh
 python3 -m pip install --no-binary mypy -U mypy
 ```
 
